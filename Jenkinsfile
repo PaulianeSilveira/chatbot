@@ -1,6 +1,10 @@
 pipeline {
     agent any  // Define que o pipeline pode ser executado em qualquer agente disponível
 
+environment {
+    PATH = "C:\\Windows\\System32;C:\\Users\\pauli\\AppData\\Local\\Programs\\Python\\Python312;C:\\Users\\pauli\\AppData\\Local\\Programs\\Python\\Python312\\Scripts;${env.PATH}"
+}
+
     stages {
         stage('Preparação do Ambiente') {
             steps {
