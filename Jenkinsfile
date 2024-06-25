@@ -1,17 +1,10 @@
 pipeline {
-    agent any
+    agent any  // Define que o pipeline pode ser executado em qualquer agente disponível
 
-    stages {
-            image 'devopsjourney1/myjenkinsagents:python'
-            label 'docker-agent-python' 
-            
-        }
-    }
     stages {
         stage('Preparação do Ambiente') {
             steps {
-                
-                echo 'ja instalado'
+                echo 'Ambiente pronto'
             }
         }
 
