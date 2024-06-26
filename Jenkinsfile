@@ -2,7 +2,7 @@ pipeline {
     agent any  // Define que o pipeline pode ser executado em qualquer agente disponível
     parameters {
         // Parâmetro de texto com nome "nomeDoArquivo" e valor padrão "perguntas.txt"
-        string(name: 'Pergunte:', description: 'Caminho do diretorio')
+        string(name: 'Pergunte:', description: 'perguntas.txt')
     }
 
 
