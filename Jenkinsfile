@@ -3,7 +3,7 @@ pipeline {
 
     parameters {
         // Parâmetro de texto com nome "Pergunte:", description: 'perguntas.txt'
-        string(name: 'Pergunta:', description: 'perguntas.txt')
+        string(name: 'Pergunte:', description: 'perguntas.txt')
         // Parâmetro de texto com nome "emailUsuario", description: 'E-mail do usuário', defaultValue: 'usuario@exemplo.com'
         string(name: 'emailUsuario', description: 'E-mail do usuário', defaultValue: 'usuario@exemplo.com')
         // Parâmetro de texto com nome "assuntoEmail", defaultValue: 'Resposta do Chatbot'
@@ -14,7 +14,7 @@ pipeline {
 
 
     environment {
-        PATH = "C:\\Windows\\System32;C:\\Users\\pauli\\AppData\\Local\\Programs\\Python\\Python312;C:\\Users\\pauli\\AppData\\Local\\Programs\\Python\\Python312\\Scripts;${env.PATH}"
+        PATH = "C:\Windows\System32;C:\Users\pauli\AppData\Local\Programs\Python\Python312;C:\Users\pauli\AppData\Local\Programs\Python\Python312\Scripts;${env.PATH}"
     }
 
 
@@ -69,4 +69,3 @@ pipeline {
         }
     }
 }
-
