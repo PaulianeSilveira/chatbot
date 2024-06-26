@@ -2,11 +2,9 @@ pipeline {
     agent any  // Define que o pipeline pode ser executado em qualquer agente disponível
     parameters {
         // Parâmetro de texto com nome "nomeDoArquivo" e valor padrão "perguntas.txt"
-        string(name: 'nomeDoArquivo', defaultValue: 'perguntas.txt')
-
-        // Parâmetro booleano com nome "executarChatbot" e valor padrão "true"
-        boolean(name: 'executarChatbot', defaultValue: true)
+        string(name: 'DIRETORIO', description: 'Caminho do diretorio')
     }
+
 
     environment {
         PATH = "C:\\Windows\\System32;C:\\Users\\pauli\\AppData\\Local\\Programs\\Python\\Python312;C:\\Users\\pauli\\AppData\\Local\\Programs\\Python\\Python312\\Scripts;${env.PATH}"
