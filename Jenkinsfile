@@ -14,8 +14,7 @@ pipeline {
 
 
     environment {
-        PATH = "C:\Windows\System32;C:\Users\pauli\AppData\Local\Programs\Python\Python312;C:\Users\pauli\AppData\Local\Programs\Python\Python312\Scripts;${env.PATH}"
-    }
+        python_path = "C:/Windows/System32/Python312;C:/Users/pauli/AppData/Local/Programs/Python/Python312/Scripts"
 
 
     stages {
