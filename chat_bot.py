@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
     # Obter a pergunta do usuário
     pergunta = params.Pergunte
-}
+
     # Encontrar a resposta à pergunta
     resposta = encontrar_resposta(pergunta, perguntas_respostas)
 
