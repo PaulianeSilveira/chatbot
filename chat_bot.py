@@ -67,7 +67,7 @@ if __name__ == "__main__":
     perguntas_respostas = carregar_perguntas("perguntas.txt")
 
     # Obter a pergunta do usuário
-    pergunta = params.Pergunta
+    pergunta = params.Pergunte
 
     # Encontrar a resposta à pergunta
     resposta = encontrar_resposta(pergunta, perguntas_respostas)
